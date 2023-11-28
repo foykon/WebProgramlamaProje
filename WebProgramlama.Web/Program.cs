@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using WebProgramlama.Data.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//for database
+builder.Services.AddDbContext<AppDbContext>(
+    o => o.UseNpgsql(builder.Configuration.GetConnectionString("WebProgramlamaProjeDb")));
 
 var app = builder.Build();
 
