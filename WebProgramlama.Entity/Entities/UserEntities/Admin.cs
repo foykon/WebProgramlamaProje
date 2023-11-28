@@ -5,15 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebProgramlama.Entity.Entities
+namespace WebProgramlama.Entity.Entities.UserEntities
 {
-    public class Customer : Entity
+    public class Admin : Entity.Entities.BaseEntitiy.Entity
     {
         //[Key]
         //public int Id { get; set; }
         [Required]
-        public string CustomerName { get; set; }
+        public string AdminName { get; set; }
         [Required]
-        public string CustomerPassword { get; set; }
+        public string AdminPassword { get; set; }
     }
 }
