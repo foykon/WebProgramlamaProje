@@ -1,14 +1,22 @@
 using Microsoft.EntityFrameworkCore;
 using WebProgramlama.Data.Context;
+using WebProgramlama.Service.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
+builder.Services.AddPersistenceServices();
+builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
+    policy.WithOrigins("https://localhost:4200", "http://localhost:4200").AllowAnyHeader().AllowAnyMethod()
+
+));
+
 //for database
 builder.Services.AddDbContext<AppDbContext>(
-    o => o.UseNpgsql(builder.Configuration.GetConnectionString("WebProgramlamaProjeDb")));
+  o => o.UseNpgsql(builder.Configuration.GetConnectionString("WebProgramlamaProjeDb")));
 
 var app = builder.Build();
 
@@ -29,6 +37,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Plane}/{action=Index}/{id?}");
 
 app.Run();

@@ -10,6 +10,6 @@ namespace WebProgramlama.Entity.Entities.BaseEntitiy
     public class BaseEntity
     {
         [Key]
-        public Guid Id { get; set; }
+        public string Id { get; set; }
     }
 }
