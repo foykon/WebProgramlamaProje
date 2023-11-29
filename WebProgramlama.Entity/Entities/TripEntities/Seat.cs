@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebProgramlama.Entity.Entities.TripEntities
 {
-    public class Seat : BaseEntitiy.Entity
+    public class Seat : BaseEntitiy.BaseEntity
     {
         public int SeatNumber { get; set; }
         public bool IsNotReserved { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WebProgramlama.Entity.Entities.BaseEntitiy
 {
-    public class Entity
+    public class BaseEntity
     {
         [Key]
         public int Id { get; set; }

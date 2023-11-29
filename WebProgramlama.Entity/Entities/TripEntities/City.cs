@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebProgramlama.Entity.Entities.TripEntities
 {
-    public class City : BaseEntitiy.Entity
+    public class City : BaseEntitiy.BaseEntity
     {
         public string CityName { get; set; }
     }

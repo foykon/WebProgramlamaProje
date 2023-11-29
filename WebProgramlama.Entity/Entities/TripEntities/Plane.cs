@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebProgramlama.Entity.Entities.TripEntities
 {
-    public class Plane : BaseEntitiy.Entity
+    public class Plane : BaseEntitiy.BaseEntity
     {
         public string PlaneModel { get; set; }
         public List<Seat> Seats { get; set; }

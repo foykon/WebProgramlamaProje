@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WebProgramlama.Entity.Entities.UserEntities
 {
-    public class Admin : Entity.Entities.BaseEntitiy.Entity
+    public class Admin : Entity.Entities.BaseEntitiy.BaseEntity
     {
         //[Key]
         //public int Id { get; set; }

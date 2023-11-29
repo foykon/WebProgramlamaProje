@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProgramlama.Data", "WebProgramlama.Data\WebProgramlama.Data.csproj", "{B982B205-2E25-4599-9356-66BB9A1333C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebProgramlama.Data", "WebProgramlama.Data\WebProgramlama.Data.csproj", "{B982B205-2E25-4599-9356-66BB9A1333C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProgramlama.Entity", "WebProgramlama.Entity\WebProgramlama.Entity.csproj", "{054CDA03-1B78-4EBC-98C9-C493AA10224C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebProgramlama.Entity", "WebProgramlama.Entity\WebProgramlama.Entity.csproj", "{054CDA03-1B78-4EBC-98C9-C493AA10224C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProgramlama.Service", "WebProgramlama.Service\WebProgramlama.Service.csproj", "{DEDCE897-B8DF-4633-BF45-7DA9AF91F8F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebProgramlama.Service", "WebProgramlama.Service\WebProgramlama.Service.csproj", "{DEDCE897-B8DF-4633-BF45-7DA9AF91F8F1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{054CDA03-1B78-4EBC-98C9-C493AA10224C} = {054CDA03-1B78-4EBC-98C9-C493AA10224C}
+		{B982B205-2E25-4599-9356-66BB9A1333C0} = {B982B205-2E25-4599-9356-66BB9A1333C0}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProgramlama.Web", "WebProgramlama.Web\WebProgramlama.Web.csproj", "{4378C8E2-4981-4A95-A275-1A62FBA81173}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebProgramlama.Web", "WebProgramlama.Web\WebProgramlama.Web.csproj", "{4378C8E2-4981-4A95-A275-1A62FBA81173}"
+	ProjectSection(ProjectDependencies) = postProject
+		{054CDA03-1B78-4EBC-98C9-C493AA10224C} = {054CDA03-1B78-4EBC-98C9-C493AA10224C}
+		{DEDCE897-B8DF-4633-BF45-7DA9AF91F8F1} = {DEDCE897-B8DF-4633-BF45-7DA9AF91F8F1}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

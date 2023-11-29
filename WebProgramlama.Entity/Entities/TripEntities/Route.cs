@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebProgramlama.Entity.Entities.TripEntities
 {
-    public class Route : BaseEntitiy.Entity
+    public class Route : BaseEntitiy.BaseEntity
     {
         public City CityFrom { get; set; }
         public City CityTo { get; set; }

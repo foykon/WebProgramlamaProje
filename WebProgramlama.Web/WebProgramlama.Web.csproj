@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebProgramlama.Data\WebProgramlama.Data.csproj" />
+    <ProjectReference Include="..\WebProgramlama.Service\WebProgramlama.Service.csproj" />
   </ItemGroup>
 
 </Project>
